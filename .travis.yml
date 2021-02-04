@@ -5,6 +5,6 @@ python:
   - "3.8"
   - "3.9"
 install:
-  - python -m pip install –upgrade pip
+  - pip3 install --upgrade pip
 script:
   - test.py
