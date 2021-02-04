@@ -2,4 +2,4 @@ language: python
 python: 
   - "3.9"
 install: pip install -r requirements.txt
-script: python3 test.py || python test.py
+script: test.py
