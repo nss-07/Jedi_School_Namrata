@@ -7,4 +7,4 @@ python:
 install:
   - pip3 install --upgrade pip
 script:
-  - test.py
+  - python test.py || python3 test.py
