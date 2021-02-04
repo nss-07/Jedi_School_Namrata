@@ -50,9 +50,9 @@ def is_exp_date_valid(exp_date):
 
 
 def is_valid(user_info):
-    return "Successfully validated card details" if is_name_valid(user_info['user_name']) and is_card_number_valid(
+    return is_name_valid(user_info['user_name']) and is_card_number_valid(
         user_info['card_number']) and is_cvv_valid(int(user_info['cvv'])) and is_exp_date_valid(
-        user_info['valid_until']) else "Try Again!"
+        user_info['valid_until'])
 
 
 if __name__ == "__main__":
@@ -60,4 +60,4 @@ if __name__ == "__main__":
                  'card_number': input("Card number: "),
                  'cvv': input("CVV: "),
                  'valid_until': input("Valid until (MM/YY): ")}
-    print(is_valid(user_info))
+    print("Successfully validated card details") if is_valid(user_info) else print("Try again!")
