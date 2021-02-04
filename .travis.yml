@@ -1,6 +1,4 @@
 language: python
-python:
+python: 
   - "3.9"
-install:
-  - pip install -r requirements.txt
-script: python3 credit_card_validation.py || python credit_card_validation.py
+script: python3 test.py || python test.py
