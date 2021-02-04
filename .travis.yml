@@ -11,3 +11,4 @@ script:
   - python test.py || python3 test.py
   - coverage run test.py
   - coverage report -m
+after_success: coveralls
